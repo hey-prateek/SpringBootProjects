@@ -5,6 +5,7 @@ import java.util.TreeMap;
 
 public class treepmapSortingLogic {
     public static void main(String[] args) {
+
         TreeMap<Integer, String> map1 = new TreeMap<>();
         map1.put(1, "prateek");
         map1.put(10, "muskan");
@@ -21,7 +22,7 @@ public class treepmapSortingLogic {
         map3.put("apple", 1);
         map3.put("kiwi", 2);
         map3.put("banana", 3);
-        System.out.println("sorting on length of first string: "+map3);
+        System.out.println("sorting on length of first string: " + map3);
 
     }
 
