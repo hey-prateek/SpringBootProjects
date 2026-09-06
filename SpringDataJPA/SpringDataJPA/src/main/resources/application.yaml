@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: SpringDataJPA
+
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver
+    username: guest
+    password:
+
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: beans, info, metrics, health, shutdown, customActuatorEndpoint
+      base-path: /custom_actuator
+
+info:
+  app-name: Book Management App
+  app-version: 1.0
+  app-description: An app to create, get and manager book details

@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/batchdb?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: root
+    password: p18a20e5k
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  batch:
+    job:
+      enabled: false
+    jdbc:
+      initialize-schema: always

@@ -1,0 +1,13 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+         http://www.springframework.org/schema/beans
+         http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--    creating a bean named with id and of class mentioned in class -->
+    <bean id="class1" class="com.example.waysOfBeanCreation.class1">
+        <!--        this is setter injection type-->
+        <property name="message" value="kanye west"/>
+        <!--        this is constructor injection, if required-->
+<!--        <constructor-arg value="kanye west"/>-->
+    </bean>
+</beans>

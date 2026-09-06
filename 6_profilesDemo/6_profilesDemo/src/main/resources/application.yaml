@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: 6_profilesDemo
+
+logging:
+  file:
+    name: logs/user.log

@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: 5_conditionalBean
+
+info:
+  paymentType: online
